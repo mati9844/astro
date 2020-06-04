@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="10px"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:text="Preferences"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:textColor="@color/colorAccent" />
+
+    <TableLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            android:layout_weight="1"
+
+            <TextView
+                android:id="@+id/latitudeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latitude:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <EditText
+                android:id="@+id/latitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Latitude..."
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#xb0;N" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            android:layout_weight="1"
+
+            <TextView
+                android:id="@+id/longitudeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Longitude:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <EditText
+                android:id="@+id/longitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Longitude..."
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#xb0;E" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            android:layout_weight="1"
+
+            <TextView
+                android:id="@+id/freqText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refresh time"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:tint="@android:color/background_dark"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="0dp"
+        app:fabSize="auto"
+        app:maxImageSize="@android:dimen/app_icon_size"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+</LinearLayout>

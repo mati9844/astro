@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AstroApp</string>
+    <string name="tab_text_1">Sun</string>
+    <string name="tab_text_2">Moon</string>
+
+
+    <string-array name="freqs">
+        <item>1 min</item>
+        <item>5 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>60 min</item>
+    </string-array>
+
+</resources>
